@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100dvh;
+    width: 100vw;
+    position: relative;
+}
+
+.background{
+    background: #0DF;
+    background: radial-gradient(circle, rgba(0, 221, 255, 1) 0%, rgba(0, 164, 189, 1) 100%);
+    width: 100vw;
+    height: 100dvh;
+}
+
+.grass{
+    height: 20%;
+    background: #0A0;
+    background: linear-gradient(357deg, rgba(0, 170, 0, 1) 0%, rgba(0, 230, 0, 1) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.tallo{
+    width: 10px;
+    height: 250px;
+    background: linear-gradient(90deg,rgba(0, 122, 0, 1) 0%, rgba(0, 255, 0, 1) 50%);
+    border: 1px solid #0000005d;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+
+.petalo1, .petalo2{
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle,rgba(0, 255, 0, 1) 50%, rgba(0, 179, 0, 1) 100%);
+    border: 1px solid #00000081;
+}
+
+.petalo1{
+    border-radius: 10px 100px;
+}
+
+.petalo2{
+    border-radius: 100px 10px;
+    margin: 10px 0 0 5px;
+}
+
+.circulo{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background: radial-gradient(circle,rgba(66, 36, 0, 1) 0%, rgba(130, 72, 0, 1) 50%);
+    position: absolute;
+    bottom: 290px;
+    left: calc(50% - 70px);
+}
+
+.pet{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(0deg,rgba(255, 200, 0, 1) 0%, rgba(184, 129, 0, 1) 100%);
+    transform: rotate(-95deg);
+    position: absolute;
+    bottom: 200px;
+    border-radius: 100px 1px;
+    left: 50%;
+}
+
+.pet2{
+    transform: rotate(-45deg) translate(-50px, -50px);
+}
+
+.pet3{
+    transform: rotate(5deg) translate(-150px, 10px);
+}
+
+.pet4{
+    transform: rotate(55deg) translate(-200px, 100px);
+}
+
+.pet5{
+    transform: rotate(95deg) translate(-160px, 150px);
+}
+
+.pet6{
+    transform: rotate(135deg) translate(-80px, 180px);
+}
+
+.pet7{
+    transform: rotate(175deg) translate(-10px, 170px);
+}
+
+.pet8{
+    transform: rotate(-135deg) translate(40px, 100px);
+}
+
+.touch{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #ffffff6e;
+    position: absolute;
+    bottom: 180px;
+    left: calc(50% - 10px);
+    animation: tocar .8s alternate infinite;
+}
+
+.flor{
+    transform: scale(.5);
+}
+
+.mensaje{
+    display: flex;
+    width: 100%;
+    background-color: #0000005d;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes mensaje{
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        display: block;
+        transform: translateY(-400px);
+    }
+}
+
+@keyframes tocar{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+        box-shadow: 0 0 10px #ffffff34;
+    }
+}
